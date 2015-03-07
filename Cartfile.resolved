@@ -1,0 +1,6 @@
+github "LlamaKit/LlamaKit" "v0.5.0"
+github "Quick/Nimble" "v0.3.1"
+github "robrix/Prelude" "1.4"
+github "Quick/Quick" "v0.2.2"
+github "NachoSoto/protobuf-swift" "1.4.1"
+github "ReactiveCocoa/ReactiveCocoa" "7651d7de1c939b2a4db7ffb3220ca6274c20a9aa"
