@@ -1,3 +1,6 @@
+option java_package = "com.nachosoto.protobuf.messages";
+option java_outer_classname = "AddressBook";
+
 message Person {
 	required int32 id = 1;
 	required string name = 2;
