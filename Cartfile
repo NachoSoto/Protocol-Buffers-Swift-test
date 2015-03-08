@@ -1,3 +1,2 @@
 github "ReactiveCocoa/ReactiveCocoa" "swift-development"
-github "robrix/Prelude"
 github "NachoSoto/protobuf-swift" "master"

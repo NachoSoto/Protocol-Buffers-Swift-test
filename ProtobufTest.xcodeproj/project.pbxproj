@@ -17,8 +17,6 @@
 		57EFEA6A1AAB8C02009AD276 /* ProtobufTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EFEA691AAB8C02009AD276 /* ProtobufTestTests.swift */; };
 		57EFEA811AAB9B33009AD276 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EFEA751AAB9B25009AD276 /* LlamaKit.framework */; };
 		57EFEA821AAB9B33009AD276 /* LlamaKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57EFEA751AAB9B25009AD276 /* LlamaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		57EFEA851AAB9B34009AD276 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EFEA771AAB9B25009AD276 /* Prelude.framework */; };
-		57EFEA861AAB9B34009AD276 /* Prelude.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57EFEA771AAB9B25009AD276 /* Prelude.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57EFEA871AAB9B34009AD276 /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EFEA781AAB9B25009AD276 /* ProtocolBuffers.framework */; };
 		57EFEA881AAB9B34009AD276 /* ProtocolBuffers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57EFEA781AAB9B25009AD276 /* ProtocolBuffers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57EFEA8B1AAB9B34009AD276 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EFEA7A1AAB9B25009AD276 /* ReactiveCocoa.framework */; };
@@ -45,7 +43,6 @@
 				57EFEA881AAB9B34009AD276 /* ProtocolBuffers.framework in Embed Frameworks */,
 				57EFEA8C1AAB9B34009AD276 /* ReactiveCocoa.framework in Embed Frameworks */,
 				57EFEA821AAB9B33009AD276 /* LlamaKit.framework in Embed Frameworks */,
-				57EFEA861AAB9B34009AD276 /* Prelude.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,7 +65,6 @@
 		57EFEA691AAB8C02009AD276 /* ProtobufTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtobufTestTests.swift; sourceTree = "<group>"; };
 		57EFEA751AAB9B25009AD276 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = Carthage/Build/iOS/LlamaKit.framework; sourceTree = "<group>"; };
 		57EFEA761AAB9B25009AD276 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		57EFEA771AAB9B25009AD276 /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prelude.framework; path = Carthage/Build/iOS/Prelude.framework; sourceTree = "<group>"; };
 		57EFEA781AAB9B25009AD276 /* ProtocolBuffers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProtocolBuffers.framework; path = Carthage/Build/iOS/ProtocolBuffers.framework; sourceTree = "<group>"; };
 		57EFEA791AAB9B25009AD276 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		57EFEA7A1AAB9B25009AD276 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
@@ -82,7 +78,6 @@
 				57EFEA811AAB9B33009AD276 /* LlamaKit.framework in Frameworks */,
 				57EFEA8B1AAB9B34009AD276 /* ReactiveCocoa.framework in Frameworks */,
 				57EFEA871AAB9B34009AD276 /* ProtocolBuffers.framework in Frameworks */,
-				57EFEA851AAB9B34009AD276 /* Prelude.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				57EFEA751AAB9B25009AD276 /* LlamaKit.framework */,
-				57EFEA771AAB9B25009AD276 /* Prelude.framework */,
 				57EFEA781AAB9B25009AD276 /* ProtocolBuffers.framework */,
 				57EFEA7A1AAB9B25009AD276 /* ReactiveCocoa.framework */,
 			);
