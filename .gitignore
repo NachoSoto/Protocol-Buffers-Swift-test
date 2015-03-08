@@ -15,4 +15,9 @@ DerivedData
 *.ipa
 *.xcuserstate
 
-ProtobufTest/Proto/generated/*
+.idea
+node_modules
+npm-debug.log
+
+Proto/generated
+js-server/proto
