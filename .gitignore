@@ -16,8 +16,5 @@ DerivedData
 *.xcuserstate
 
 .idea
-node_modules
-npm-debug.log
 
 Proto/generated
-js-server/proto
