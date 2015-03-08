@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570A58191AABCF0E00FC4C38 /* Person.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570A58171AABCF0E00FC4C38 /* Person.pb.swift */; };
 		5769922E1AABA10700226E7E /* ProtoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769922D1AABA10700226E7E /* ProtoTest.swift */; };
-		576992311AABA51200226E7E /* Person.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576992301AABA51200226E7E /* Person.pb.swift */; };
 		57EFEA541AAB8C02009AD276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EFEA531AAB8C02009AD276 /* AppDelegate.swift */; };
 		57EFEA561AAB8C02009AD276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EFEA551AAB8C02009AD276 /* ViewController.swift */; };
 		57EFEA591AAB8C02009AD276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57EFEA571AAB8C02009AD276 /* Main.storyboard */; };
@@ -53,8 +53,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		570A58161AABCC0D00FC4C38 /* source */ = {isa = PBXFileReference; lastKnownFileType = folder; name = source; path = Proto/source; sourceTree = SOURCE_ROOT; };
+		570A58171AABCF0E00FC4C38 /* Person.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.pb.swift; path = swift/Person.pb.swift; sourceTree = "<group>"; };
 		5769922D1AABA10700226E7E /* ProtoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtoTest.swift; sourceTree = "<group>"; };
-		576992301AABA51200226E7E /* Person.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.pb.swift; sourceTree = "<group>"; };
 		57EFEA4E1AAB8C02009AD276 /* ProtobufTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtobufTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57EFEA521AAB8C02009AD276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57EFEA531AAB8C02009AD276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		57EFEA781AAB9B25009AD276 /* ProtocolBuffers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProtocolBuffers.framework; path = Carthage/Build/iOS/ProtocolBuffers.framework; sourceTree = "<group>"; };
 		57EFEA791AAB9B25009AD276 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		57EFEA7A1AAB9B25009AD276 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		57EFEA951AAB9C89009AD276 /* source */ = {isa = PBXFileReference; lastKnownFileType = folder; name = source; path = Proto/source; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,14 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5769922F1AABA51200226E7E /* generated */ = {
+		570A58131AABCC0600FC4C38 /* generated */ = {
 			isa = PBXGroup;
 			children = (
-				576992301AABA51200226E7E /* Person.pb.swift */,
+				570A58171AABCF0E00FC4C38 /* Person.pb.swift */,
 			);
 			name = generated;
 			path = Proto/generated;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		57EFEA451AAB8C02009AD276 = {
 			isa = PBXGroup;
@@ -178,8 +178,8 @@
 		57EFEA8E1AAB9B6A009AD276 /* Proto */ = {
 			isa = PBXGroup;
 			children = (
-				57EFEA951AAB9C89009AD276 /* source */,
-				5769922F1AABA51200226E7E /* generated */,
+				570A58161AABCC0D00FC4C38 /* source */,
+				570A58131AABCC0600FC4C38 /* generated */,
 			);
 			name = Proto;
 			sourceTree = "<group>";
@@ -330,7 +330,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "PROTO_PATH=\"$SRCROOT/ProtobufTest/Proto/\"\n/usr/local/bin/protoc \"$PROTO_PATH/source/\"* --swift_out=\"$PROTO_PATH/generated\" --proto_path=\"$PROTO_PATH\"";
+			shellScript = "PROTO_PATH=\"$SRCROOT/Proto/\"\n/usr/local/bin/protoc \"$PROTO_PATH/source/\"* --swift_out=\"$PROTO_PATH/generated/swift\" --proto_path=\"$PROTO_PATH\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -340,7 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57EFEA561AAB8C02009AD276 /* ViewController.swift in Sources */,
-				576992311AABA51200226E7E /* Person.pb.swift in Sources */,
+				570A58191AABCF0E00FC4C38 /* Person.pb.swift in Sources */,
 				5769922E1AABA10700226E7E /* ProtoTest.swift in Sources */,
 				57EFEA541AAB8C02009AD276 /* AppDelegate.swift in Sources */,
 			);
